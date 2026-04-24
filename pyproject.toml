@@ -1,0 +1,18 @@
+[project]
+name = "causeway-bay-property-mcp"
+version = "0.1.0"
+description = "MCP server for searching Hong Kong property listings in Causeway Bay Fashion Walk area"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=5.0.0",
+]
+
+[project.scripts]
+causeway-bay-property-mcp = "server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
